@@ -95,25 +95,29 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+        "#1e1e1e",  /* Black    0 */
+        "#ff453a",  /* Red      1 */
+        "#32d74b",  /* Green    2 */
+        "#ffd60a",  /* Yellow   3 */
+        "#2a84d2",  /* Blue     4 */
+        "#bf5af2",  /* Magenta  5 */
+        "#1081d6",  /* Cyan     6 */
+        "#fafafa",  /* White    7 */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+        "#ffffff",  /* Black    8 */
+        "#ff453a",  /* Red      9 */
+        "#32d74b",  /* Green    10 */
+        "#ffd60a",  /* Yellow   11 */
+        "#1081d6",  /* Blue     12 */
+        "#bf5af2",  /* Magenta  13 */
+        "#63d9e0",  /* Cyan     14 */
+        "#ffffff",  /* White    15 */
+
+	/* Theme inspired by "Midnite in Mojave"
+	 -> https://github.com/mbadolato/iTerm2-Color-Schemes */
 
 	[255] = 0,
 
@@ -129,8 +133,8 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
