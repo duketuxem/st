@@ -17,6 +17,7 @@ options:
 
 config.h:
 	cp config.def.h config.h
+	rm config.h
 
 .c.o:
 	$(CC) $(STCFLAGS) -c $<

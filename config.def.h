@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Hack Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -95,25 +95,29 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+
+	/* My custom theme inspired by "Midnite in Mojave"
+	 -> https://github.com/mbadolato/iTerm2-Color-Schemes */
+
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+        "#1e1e1e",  /* Black    0 */
+        "#ff453a",  /* Red      1 */
+        "#32d74b",  /* Green    2 */
+        "#ffd60a",  /* Yellow   3 */
+        "#2a84d2",  /* Blue     4 */
+        "#bf5af2",  /* Magenta  5 */
+        "#1081d6",  /* Cyan     6 */
+        "#f9f9f9",  /* White    7 */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+        "#ffffff",  /* Black    8 */
+        "#ff453a",  /* Red      9 */
+        "#32d74b",  /* Green    10 */
+        "#ffd60a",  /* Yellow   11 */
+        "#1081d6",  /* Blue     12 */
+        "#bf5af2",  /* Magenta  13 */
+        "#63d9e0",  /* Cyan     14 */
+        "#ffffff",  /* White    15 */
 
 	[255] = 0,
 
