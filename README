@@ -1,34 +1,19 @@
-st - simple terminal
---------------------
-st is a simple terminal emulator for X which sucks less.
+# Custom build of st
+
+This is my personal fork of st, for now including only the transparency patch and more importantly my favorite default settings.
 
 
-Requirements
-------------
-In order to build st you need the Xlib header files.
+### Added Features
+
+- Transparency (alpha patch)
 
 
-Installation
-------------
-Edit config.mk to match your local setup (st is installed into
-the /usr/local namespace by default).
+### Development Workflow / Personal Reminder
 
-Afterwards enter the following command to build and install st (if
-necessary as root):
-
-    make clean install
+Only work with the `config.def.h` file. `config.h` is generated every time when (re)compiling.
 
 
-Running st
-----------
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
+### Small requirements
 
-    tic -sx st.info
-
-See the man page for additional details.
-
-Credits
--------
-Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
-
+- Compositor for transparency (picom)
+- [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf)

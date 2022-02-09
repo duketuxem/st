@@ -17,7 +17,6 @@ options:
 
 config.h:
 	cp config.def.h config.h
-	rm config.h
 
 .c.o:
 	$(CC) $(STCFLAGS) -c $<
@@ -32,6 +31,7 @@ st: $(OBJ)
 
 clean:
 	rm -f st $(OBJ) st-$(VERSION).tar.gz
+	rm config.h
 
 dist: clean
 	mkdir -p st-$(VERSION)
