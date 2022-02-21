@@ -103,40 +103,38 @@ static const char *colorname[] = {
 	 -> https://github.com/mbadolato/iTerm2-Color-Schemes */
 
 	/* 8 normal colors */
-        "#1e1e1e",  /* Black    0 */
-        "#ff453a",  /* Red      1 */
-        "#32d74b",  /* Green    2 */
-        "#ffd60a",  /* Yellow   3 */
-        "#2a84d2",  /* Blue     4 */
-        "#bf5af2",  /* Magenta  5 */
-        "#1081d6",  /* Cyan     6 */
-        "#f9f9f9",  /* White    7 */
+        [0] = "#1e1e1e",  /* Black   */
+        [1] = "#ff453a",  /* Red     */
+        [2] = "#32d74b",  /* Green   */
+        [3] = "#ffd60a",  /* Yellow  */
+        [4] = "#2a84d2",  /* Blue    */
+        [5] = "#bf5af2",  /* Magenta */
+        [6] = "#1081d6",  /* Cyan    */
+        [7] = "#f9f9f9",  /* White   */
 
 	/* 8 bright colors */
-        "#ffffff",  /* Black    8 */
-        "#ff453a",  /* Red      9 */
-        "#32d74b",  /* Green    10 */
-        "#ffd60a",  /* Yellow   11 */
-        "#1081d6",  /* Blue     12 */
-        "#bf5af2",  /* Magenta  13 */
-        "#63d9e0",  /* Cyan     14 */
-        "#ffffff",  /* White    15 */
+        [8] = "#ffffff",  /* Black    */
+        [9] = "#ff453a",  /* Red      */
+        [10] = "#32d74b",  /* Green   */
+        [11] = "#ffd60a",  /* Yellow  */
+        [12] = "#1081d6",  /* Blue    */
+        [13] = "#bf5af2",  /* Magenta */
+        [14] = "#63d9e0",  /* Cyan    */
+        [15] = "#ffffff",  /* White   */
 
 	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+        [256] = "gray90",
+        [257] = "pink",
+
 };
 
 
 /*
- * Default colors (colorname index)
+ * Defaults - `colorname` (array above) index
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
+unsigned int defaultfg = 8;
 unsigned int defaultbg = 0;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
