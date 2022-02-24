@@ -103,24 +103,24 @@ static const char *colorname[] = {
 	 -> https://github.com/mbadolato/iTerm2-Color-Schemes */
 
 	/* 8 normal colors */
-        [0] = "#1e1e1e",  /* Black   */
-        [1] = "#ff453a",  /* Red     */
-        [2] = "#32d74b",  /* Green   */
-        [3] = "#ffd60a",  /* Yellow  */
-        [4] = "#2a84d2",  /* Blue    */
+        [0] = "#242424",  /* Black   */
+        [1] = "#de3224",  /* Red     */
+        [2] = "#2baf2b",  /* Green   */
+        [3] = "#fbbc04",  /* Yellow  */
+        [4] = "#208dfc",  /* Blue    */
         [5] = "#bf5af2",  /* Magenta */
-        [6] = "#1081d6",  /* Cyan    */
-        [7] = "#f9f9f9",  /* White   */
+        [6] = "#00ddd6",  /* Cyan    */
+        [7] = "#f0f0f0",  /* White   */
 
 	/* 8 bright colors */
-        [8] = "#eeeeee",  /* Black    */
+        [8] = "#777777",  /* Black    `root` in htop */
         [9] = "#ff453a",  /* Red      */
         [10] = "#32d74b",  /* Green   */
         [11] = "#ffd60a",  /* Yellow  */
         [12] = "#1081d6",  /* Blue    */
-        [13] = "#bf5af2",  /* Magenta */
-        [14] = "#63d9e0",  /* Cyan    */
-        [15] = "#eeeeee",  /* White   */
+        [13] = "#db67e6",  /* Magenta */
+        [14] = "#6ae3fa",  /* Cyan    */
+        [15] = "#ffffff",  /* White   - [] in htop*/
 
 	[255] = 0,
 
@@ -134,7 +134,7 @@ static const char *colorname[] = {
  * Defaults - `colorname` (array above) index
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 8;
+unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
