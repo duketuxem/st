@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Code New Roman Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.95;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -103,7 +103,7 @@ static const char *colorname[] = {
 	 -> https://github.com/mbadolato/iTerm2-Color-Schemes */
 
 	/* 8 normal colors */
-        [0] = "#242424",  /* Black   */
+        [0] = "#2d2d2d",  /* Black   */
         [1] = "#de3224",  /* Red     */
         [2] = "#2baf2b",  /* Green   */
         [3] = "#fbbc04",  /* Yellow  */
@@ -113,7 +113,7 @@ static const char *colorname[] = {
         [7] = "#f0f0f0",  /* White   */
 
 	/* 8 bright colors */
-        [8] = "#777777",  /* Black    `root` in htop */
+        [8] = "#2d2d2d",  /* Black    `root` in htop */
         [9] = "#ff453a",  /* Red      */
         [10] = "#32d74b",  /* Green   */
         [11] = "#ffd60a",  /* Yellow  */
@@ -122,10 +122,11 @@ static const char *colorname[] = {
         [14] = "#6ae3fa",  /* Cyan    */
         [15] = "#f5f5f5",  /* White   - [] in htop*/
 
-	[255] = 0,
 
-        [256] = "gray90",
-        [257] = "pink",
+        [255] = 0,
+        [256] = "#abe9b3",
+        [257] = "#ddb6f2",
+        [258] = "yellow",
 
 };
 
